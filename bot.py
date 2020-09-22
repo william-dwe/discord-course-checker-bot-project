@@ -94,4 +94,4 @@ async def kelas(ctx, jurusan):
 	em.set_footer(icon_url = ctx.author.avatar_url, text = "Requested by " + ctx.author.name)
 	await ctx.send(embed=em)
 
-bot.run("NzU3NDQ5MjE5MTE1MTg4MjI2.X2gjjg.G0cEmuR2BqQWSD5zX2cWFB3KgTs")
+bot.run("NzU3NDQ5MjE5MTE1MTg4MjI2.X2gjjg.eaBtHYpWz9QFzbeIlPx30FKRgiI")
