@@ -97,7 +97,4 @@ async def kelas(ctx,*, jurusan):
 	em.set_footer(icon_url = ctx.author.avatar_url, text = "Requested by " + ctx.author.name)
 	await ctx.send(embed=em)
 
-@bot.command()
-async def help(ctx):
-	em_help= discord.Embed(title = "Course-Checker-Bot", description = "Cek jadwal kelas lintas jurusan mudah & praktis", color = discord.Colour.green())
 bot.run(os.environ['DISCORD_TOKEN'])
