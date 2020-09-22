@@ -3,6 +3,7 @@ from discord.ext import commands
 import pandas as pd
 from datetime import datetime
 import time
+import os
 
 df = pd.read_csv("schedule_sem_5.csv", sep= ";")
 bot = commands.Bot(command_prefix=">")
@@ -94,4 +95,4 @@ async def kelas(ctx, jurusan):
 	em.set_footer(icon_url = ctx.author.avatar_url, text = "Requested by " + ctx.author.name)
 	await ctx.send(embed=em)
 
-bot.run("NzU3NDQ5MjE5MTE1MTg4MjI2.X2gjjg.eaBtHYpWz9QFzbeIlPx30FKRgiI")
+bot.run(os.environ['DISCORD_TOKEN'])
