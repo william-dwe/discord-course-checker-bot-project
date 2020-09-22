@@ -100,5 +100,4 @@ async def kelas(ctx,*, jurusan):
 @bot.command()
 async def help(ctx):
 	em_help= discord.Embed(title = "Course-Checker-Bot", description = "Cek jadwal kelas lintas jurusan mudah & praktis", color = discord.Colour.green())
-	em_help.add_field(name = "Masih dalam tahap pengembangan ..." )
 bot.run(os.environ['DISCORD_TOKEN'])
