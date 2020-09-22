@@ -53,7 +53,7 @@ async def whois(ctx, member: discord.Member):
 
 #check jadwal kelas
 @bot.command()
-async def kelas(ctx, jurusan):
+async def kelas(ctx,*, jurusan):
 	#Time Declaration
 	t = datetime.now(pytz.timezone("Asia/Jakarta"))
 	jam_now = t.strftime("%H:%M:%S")
@@ -77,10 +77,10 @@ async def kelas(ctx, jurusan):
 
 	#Embed Output curent class
 	em = discord.Embed(title = "<< Class Checker 101 >>", color = discord.Colour.green())
-	if jurusan == "ti":
+	if jurusan in ("ti", "Ti", "TI", "teknik industri", "Teknik Industri", "Teknik industri"):
 		em.add_field(name = "Teknik Industri (TI)", value = condition, inline = False)
 		em.set_thumbnail(url = "https://mti.fti.itb.ac.id/wp-content/uploads/2019/02/mti_logo.png")
-	elif jurusan == "tk":
+	elif jurusan in ("tk", "Tk", "TK", "tekim", "Tekim", "teknik kimia", "Teknik Kimia", "Teknik kimia"):
 		em.add_field(name = "Teknik Kimia (TK)", value = condition, inline = False)
 		em.set_thumbnail(url = "https://miro.medium.com/fit/c/336/336/2*9-Qy26rzW04fNe9nGXEJzw.jpeg")
 
@@ -96,4 +96,8 @@ async def kelas(ctx, jurusan):
 	em.set_footer(icon_url = ctx.author.avatar_url, text = "Requested by " + ctx.author.name)
 	await ctx.send(embed=em)
 
+@bot.command()
+async def help(ctx):
+	em_help= discord.Embed(title = "Course-Checker-Bot", description = "Cek jadwal kelas lintas jurusan mudah & praktis", color = discord.Colour.green())
+	em_help.add_field(name = )
 bot.run(os.environ['DISCORD_TOKEN'])
