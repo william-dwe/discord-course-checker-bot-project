@@ -4,6 +4,7 @@ import pandas as pd
 from datetime import datetime
 import time
 import os
+import pytz
 
 df = pd.read_csv("schedule_sem_5.csv", sep= ";")
 bot = commands.Bot(command_prefix=">")
@@ -54,7 +55,7 @@ async def whois(ctx, member: discord.Member):
 @bot.command()
 async def kelas(ctx, jurusan):
 	#Time Declaration
-	t = datetime.now()
+	t = datetime.now(pytz.timezone("Asia/Jakarta"))
 	jam_now = t.strftime("%H:%M:%S")
 	hari_now = t.isoweekday()
 	#Kondisi Saat ini
