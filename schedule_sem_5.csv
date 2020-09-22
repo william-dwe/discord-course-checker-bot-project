@@ -1,0 +1,23 @@
+id;jurusan;hari;start;finish;kelas
+1;ti;1;07:00:00;09:00:00;Ektek - Ekonomi Teknik
+2;ti;1;16:00:00;18:00:00;PPST - Praktikum Perancangan Sistem Terintegrasi 2
+3;ti;2;07:00:00;09:00:00;PPC - Perencanaan & Pengendalian Produksi
+4;ti;2;09:00:00;12:00:00;PPM - Pengendalian & Penjaminan mutu
+5;ti;2;15:00:00;18:00:00;[Pilihan] TBD - Transformasi Bisnis Digital
+6;ti;3;07:00:00;10:00:00;OR2 - Operational Research 2
+7;ti;3;12:00:00;14:00:00;Otin - Otomasi Industri
+8;ti;3;14:40:00;17:10:00;[Pilihan] Rekog - Rekayasa Kognitif
+9;ti;4;08:00:00;11:00:00;Pemsis - Pemodelan Sistem
+10;ti;4;13:00:00;15:00:00;RSK - Rekayasa Sistem Kerja
+11;ti;5;14:00:00;17:00:00;PPST - Praktikum Perancangan Sistem Terintegrasi 2
+12;tk;1;08:00:00;09:00:00;TRK II
+13;tk;1;13:00:00;16:00:00;Air
+14;tk;2;10:00:00;12:00:00;PP
+15;tk;3;08:00:00;09:00:00;SU
+16;tk;3;09:00:00;10:00:00;PP
+17;tk;4;10:00:00;12:00:00;PLIK
+18;tk;4;14:00:00;15:00:00;OPD
+19;tk;4;15:00:00;17:00:00;SU
+20;tk;5;07:00:00;09:00:00;Alpro
+21;tk;5;09:00:00;11:00:00;OPD
+22;tk;5;14:00:00;16:00:00;TRK II
